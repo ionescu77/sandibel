@@ -1,8 +1,8 @@
 [![Swift 4](https://img.shields.io/badge/swift4-compatible-4BC51D.svg?style=flat")](https://developer.apple.com/swift)
 
-[![GitHub issues](https://img.shields.io/github/issues/genedelisa/AVFoundationPlay.svg)](https://github.com/genedelisa/AVFoundationPlay/issues)
+[![GitHub issues](https://img.shields.io/github/issues/ionescu77/sandibel.svg)](https://github.com/ionescu77/sandibel/issues)
 
-If you find one, [please add it to issues](https://github.com/genedelisa/AVFoundationPlay/issues)
+If you find one, [please add it to issues](https://github.com/ionescu77/sandibel/issues)
 
 
 Some repo to play with [FB sounds](https://facebook.design/soundkit)
