@@ -31,9 +31,6 @@ class ViewController: UIViewController {
         avPlayer = AVPlayer.init(playerItem: avPlayerItem)
         avPlayer?.volume = 1.0
         avPlayer?.play()
-
-//        player.numberOfLoops = -1
-//        player.play()
         print("Playing")
     }
     
