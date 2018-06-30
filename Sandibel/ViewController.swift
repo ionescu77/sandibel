@@ -7,8 +7,11 @@
 //
 
 import UIKit
+import AVFoundation
 
 class ViewController: UIViewController {
+    
+    let player = AVPlayer(url: Bundle.main.url(forResource: "Complete 1", withExtension: "m4a")!)
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +23,13 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    @IBOutlet weak var beep: UIButton!
+    @IBAction func beep(_ sender: Any){
+        print("about to play")
+        player.play()
+        print("Playing")
+    }
+    
+    
 }
 
