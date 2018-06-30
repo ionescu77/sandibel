@@ -10,8 +10,9 @@ import UIKit
 import AVFoundation
 
 class ViewController: UIViewController {
-    
-    let player = AVPlayer(url: Bundle.main.url(forResource: "Complete 1", withExtension: "m4a")!)
+
+    var avPlayer:AVPlayer?
+    var avPlayerItem:AVPlayerItem?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,7 +27,13 @@ class ViewController: UIViewController {
     @IBOutlet weak var beep: UIButton!
     @IBAction func beep(_ sender: Any){
         print("about to play")
-        player.play()
+        avPlayerItem = AVPlayerItem.init(url: Bundle.main.url(forResource: "Complete 1", withExtension: "m4a")!)
+        avPlayer = AVPlayer.init(playerItem: avPlayerItem)
+        avPlayer?.volume = 1.0
+        avPlayer?.play()
+
+//        player.numberOfLoops = -1
+//        player.play()
         print("Playing")
     }
     
